@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Recursive Function Sum of Array of Numbers</title>
+</head>
+<body>
+	<script>
+		
+	var array_total = function (first_array) {
+	if (first_array.length === 1) {
+		return first_array[0];
+	}
+	else {
+		return first_array.pop() + array_total(first_array);
+	}
+};
+
+console.log(array_total([10, 20, 30, 40, 50, 60]));
+
+	</script>
+</body>
+</html>
